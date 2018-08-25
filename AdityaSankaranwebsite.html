@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title>Aditya Sankaran</title>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "style.css" type = "text/css" />
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	<style>
+	</style>
+	<script>
+		var pics = ["https://cdn.vox-cdn.com/thumbor/Lm-2ZmwaYc3HjbWBhhvO09xEo0k=/0x0:4754x3169/1200x800/filters:focal(859x1289:1619x2049)/cdn.vox-cdn.com/uploads/chorus_image/image/56389111/664230540.0.jpg",
+				   "http://rockrivertimes.com/wpcms/wp-content/uploads/2017/01/nfl_football.jpg", "http://www.divisaoalfa.com.br/wp-content/uploads/2018/02/HbrLwVwXkdJS0-8rO-ZeToQPjHQQnCq9zwdZzRJCDIk.jpg"];
+		function pic()
+		{
+			slideShow(0);
+		}
+		function slideShow(n)
+		{
+			document.getElementById("image").getElementsByTagName("img")[0].src = pics[n % pics.length];
+			setTimeout( function() { slideShow(n + 1); } , 5000);
+		}
+	</script>
+</head>
+
+<body onload = "pic();">
+	
+	<div id = "center"><img src = "photo_of_me.jpg" alt = "This is a photo of me." 
+	height = "275" width = "250"></img></div>
+		
+	<br><font size = "7" color = "purple" font face = "Helvetica">Aditya Sankaran</font>
+	
+	<br><br><font size = "5" font face = "Helvetica">CS Student. Aspiring Web Designer.</font><br>
+	
+
+	<br><br><br><font size = "6" font face = "Helvetica" color = "purple">About Me</font>
+	
+	<article>
+		<br><font size = "4" font face = "Helvetica">I am a student at Purdue University pursuing a bachelors degree in computer science. I am originally from
+		San Jose, CA and went to Lynbrook High School. My interest in web design started this summer when I wanted to learn some more programming languages. My
+		friend recommended learning HTML and CSS so I took a course on Udemy. After I gained some exposure to both HTML and CSS, I learned JavaScript to complete 
+		the full circle of web development. This website is a mix of both HTML, CSS, and JavaScript.</font> 
+	</article><br><br>
+	
+	<font size = "4" font face = "Helvetica">Besides web design, I have a few hobbies and activities I commit to during my free time.</font><br><br>
+	
+	<ul>
+		<li><font size = "3" font face = "Helvetica">Basketball</font></li>
+		<li><font size = "3" font face = "Helvetica">Football</font></li>
+		<li><font size = "3" font face = "Helvetica">Watching MCU Movies</font></li>
+	</ul>
+
+	
+	<div id = "image" style = "width: 500px; height: 275px; margin: 0 auto">
+		<img style = "height: 100%; width: 100%"/>
+	</div><br><br><br><br>
+	
+	<div id = "link1"><center><a href = "https://github.com/asankaran35">
+	<br><br><img src = "github.jpg" alt = "My Github Page" style = "width:60px ; height: 50px;"></a></center></div>
+
+	<center><a href = "" download = "myResume" target = "_blank" class = "et_pb_button" style = "color:blue">Download Resume</a></center>
+</body>
+
+</html>
